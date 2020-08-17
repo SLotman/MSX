@@ -1,6 +1,6 @@
 # BlueMSX DPI
 
-Based on BlueMSX v. 2.9 by Daniel Vik and many, many other people.
+Based on [BlueMSX v. 2.9 by Daniel Vik](https://github.com/svn2github/blueMSX) and many, many other people.
 
 Features:
 * DPI awareness binary, so it renders correctly on high dpi settings
