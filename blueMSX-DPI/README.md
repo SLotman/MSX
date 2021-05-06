@@ -6,6 +6,7 @@ Features:
 * DPI awareness binary, so it renders correctly on high dpi settings
 * Solution for Visual Studio 2017 (the folder says VS2012, maybe it still works on it, but I compiled it on 2017)
 * 300% zoom option for window mode, working on GDI, Direct-X, Direct-X HW and Direct3D.
+* Fix to load Back to the Future MSX2
 
 ## BEWARE:
 - Only the classic theme will work with this version. I have no clue how other themes will behave.
