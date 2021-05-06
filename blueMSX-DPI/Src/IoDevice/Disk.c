@@ -260,8 +260,11 @@ static void diskUpdateInfo(int driveId)
 {
 	UInt8 buf[512];
     int secSize;
+	int dfs;
     DSKE rv;
 
+	// bluemsx assumes 3.5 double sided disk
+	// hence, if you insert a 360k disk it crashes
     sectorsPerTrack[driveId] = 9;
     sides[driveId]           = 2;
     tracks[driveId]          = 80;
@@ -276,14 +279,19 @@ static void diskUpdateInfo(int driveId)
         return;
     }
 
-    if (fileSize[driveId] / 512 == 1440) {
-        return;
-    }
-
+	dfs = fileSize[driveId] / 512;
+	
     rv = diskReadSector(driveId, buf, 1, 0, 0, 512, &secSize);
-    if (rv != DSKE_OK) {
-        return;
-    }
+    if (rv != DSKE_OK) return;
+
+	if (dfs == 1440) {
+		if ((buf[0] == 0xeb) && (buf[0x15] == 0xF8)) {
+			sides[driveId] = 1;
+			tracks[driveId] = 80;
+			sectorsPerTrack[driveId] = 9;
+		}
+		return;
+	}
 
     switch (fileSize[driveId]) {
         case 163840:
