@@ -1,7 +1,6 @@
 // Microsoft Visual C++ generated resource script.
 //
 #include "resource.h"
-#include "windows.h"
 /////////////////////////////////////////////////////////////////////////////
 // Portuguese (Brazil) resources
 
@@ -134,7 +133,7 @@ IDD_VIDEO DIALOGEX 0, 0, 320, 222
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
 FONT 8, "MS Shell Dlg", 0, 0, 0x0
 BEGIN
-    GROUPBOX        "Audio Driver ",IDC_AUDIODRVGROUPBOX,19,16,282,53
+    GROUPBOX        "Video Driver ",IDC_AUDIODRVGROUPBOX,13,5,282,100,BS_FLAT
 END
 
 IDD_PERF_DIRECTDRAW DIALOGEX 0, 0, 300, 160
@@ -200,7 +199,7 @@ IDD_PERFORMANCE DIALOGEX 0, 0, 320, 270
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
 FONT 8, "MS Shell Dlg", 0, 0, 0x0
 BEGIN
-    GROUPBOX        "Video Driver ",IDC_PERFVIDEODRVGROUPBOX,19,16,282,30
+    GROUPBOX        "Video Driver ",IDC_PERFVIDEODRVGROUPBOX,14,16,282,30
     LTEXT           "Display driver:",IDC_PERFDISPDRVTEXT,65,28,105,11
     COMBOBOX        IDC_VIDEODRV,171,26,110,96,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
 END
@@ -791,6 +790,11 @@ END
 //
 
 IDD_VIDEO AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_PERFORMANCE AFX_DIALOG_LAYOUT
 BEGIN
     0
 END

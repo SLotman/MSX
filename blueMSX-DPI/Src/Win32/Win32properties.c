@@ -974,11 +974,11 @@ static BOOL CALLBACK performanceDlgProc(HWND hDlg, UINT iMsg, WPARAM wParam, LPA
         pCurrentProperties = pProperties;
 
         hDlgDirectDraw = CreateDialog(GetModuleHandle(NULL), MAKEINTRESOURCE(IDD_PERF_DIRECTDRAW), hDlg, directDraWProc);
-        SetWindowPos(hDlgDirectDraw,  NULL, 18, 74, 0, 0, SWP_NOSIZE | SWP_NOZORDER);
+        SetWindowPos(hDlgDirectDraw,  NULL, 18, 74 + 35, 0, 0, SWP_NOSIZE | SWP_NOZORDER);
         hDlgGdi = CreateDialog(GetModuleHandle(NULL), MAKEINTRESOURCE(IDD_PERF_GDI), hDlg, gdiProc);
-        SetWindowPos(hDlgGdi,  NULL, 18, 74, 0, 0, SWP_NOSIZE | SWP_NOZORDER);
+        SetWindowPos(hDlgGdi,  NULL, 18, 74 + 35, 0, 0, SWP_NOSIZE | SWP_NOZORDER);
         hDlgDirect3d = CreateDialog(GetModuleHandle(NULL), MAKEINTRESOURCE(IDD_PERF_DIRECT3D), hDlg, direct3dProc);
-        SetWindowPos(hDlgDirect3d,  NULL, 18, 74, 0, 0, SWP_NOSIZE | SWP_NOZORDER);
+        SetWindowPos(hDlgDirect3d,  NULL, 18, 74 + 35, 0, 0, SWP_NOSIZE | SWP_NOZORDER);
 
         /* Init language specific dialog items */
         SendDlgItemMessage(hDlg, IDC_PERFVIDEODRVGROUPBOX, WM_SETTEXT, 0, (LPARAM)langPropPerfVideoDrvGB());
