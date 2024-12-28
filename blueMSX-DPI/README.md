@@ -13,3 +13,7 @@ Features:
 - Do not install this over a previous BlueMSX installation. Weird things might happen.
 
 ## This is experimental, use it at your own risk!
+
+## Direct-X 9
+If you don't have Direct-X 9 or you get a "missing D3DX9_42.DLL" error, download the Direct-X web setup from here: [Direct-X 9 Web Setup](https://www.microsoft.com/en-us/download/details.aspx?id=35)
+BE CAREFUL WHEN INSTALLING THIS, IT WILL ASK TO INSTALL THE "BING BAR" - just untick that checkbox and you'll should be good to go.
