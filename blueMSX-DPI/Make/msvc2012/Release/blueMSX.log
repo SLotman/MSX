@@ -1,0 +1,695 @@
+﻿  Performing Custom Build Tools
+  New build number: 35028
+  ArrayList.c
+  ColecoSteeringWheel.c
+  ColecoSuperAction.c
+  Microchip24x00.c
+d:\repo\msx-master\msx\bluemsx-dpi\src\iodevice\microchip24x00.c(58): warning C4091: 'typedef ': ignored on left of 'Microchip24x00' when no variable is declared
+  Z8530.c
+  romMapperActivisionPcb.c
+  romMapperArc.c
+  romMapperDooly.c
+  romMapperMuPack.c
+  romMapperNms1210Rs232.c
+  romMapperOpcodeBios.c
+  romMapperOpcodeMegaRam.c
+  romMapperOpcodeSaveRam.c
+  romMapperOpcodeSlotManager.c
+  romMapperSg1000RamExpander.c
+  romMapperSvi328RsIDE.c
+  ZipFromMem.c
+  Win32.c
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(39): warning C4005: 'WINAPI_PARTITION_DESKTOP': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\shared\winapifamily.h(150): note: see previous definition of 'WINAPI_PARTITION_DESKTOP'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(40): warning C4005: 'CREATEPROCESS_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(283): note: see previous definition of 'CREATEPROCESS_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(41): warning C4005: 'MINIMUM_RESERVED_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(288): note: see previous definition of 'MINIMUM_RESERVED_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(223): warning C4005: 'WINAPI_PARTITION_APP': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\shared\winapifamily.h(157): note: see previous definition of 'WINAPI_PARTITION_APP'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(224): warning C4005: 'ISOLATIONAWARE_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(284): note: see previous definition of 'ISOLATIONAWARE_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(313): warning C4005: 'ISOLATIONAWARE_NOSTATICIMPORT_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(285): note: see previous definition of 'ISOLATIONAWARE_NOSTATICIMPORT_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(540): warning C4005: 'MAXIMUM_RESERVED_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(289): note: see previous definition of 'MAXIMUM_RESERVED_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(603): warning C4005: 'RT_MANIFEST': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(282): note: see previous definition of 'RT_MANIFEST'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1498): warning C4005: '_WIN32_WINNT': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\shared\sdkddkver.h(218): note: see previous definition of '_WIN32_WINNT'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1855): warning C4005: 'IDI_APPLICATION': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11058): note: see previous definition of 'IDI_APPLICATION'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1858): warning C4005: 'IDI_HAND': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11059): note: see previous definition of 'IDI_HAND'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1861): warning C4005: 'IDI_QUESTION': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11060): note: see previous definition of 'IDI_QUESTION'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1864): warning C4005: 'IDI_EXCLAMATION': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11061): note: see previous definition of 'IDI_EXCLAMATION'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1867): warning C4005: 'IDI_ASTERISK': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11062): note: see previous definition of 'IDI_ASTERISK'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1869): warning C4005: 'IDI_WINLOGO': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11064): note: see previous definition of 'IDI_WINLOGO'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1871): warning C4005: 'IDI_SHIELD': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11067): note: see previous definition of 'IDI_SHIELD'
+d:\repo\msx-master\msx\bluemsx-dpi\src\win32\win32.c(872): warning C4013: 'actionQuickSaveStateUndo' undefined; assuming extern returning int
+d:\repo\msx-master\msx\bluemsx-dpi\src\win32\win32.c(3350): warning C4013: 'strcasestr' undefined; assuming extern returning int
+  Win32Avi.c
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(39): warning C4005: 'WINAPI_PARTITION_DESKTOP': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\shared\winapifamily.h(150): note: see previous definition of 'WINAPI_PARTITION_DESKTOP'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(40): warning C4005: 'CREATEPROCESS_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(283): note: see previous definition of 'CREATEPROCESS_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(41): warning C4005: 'MINIMUM_RESERVED_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(288): note: see previous definition of 'MINIMUM_RESERVED_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(223): warning C4005: 'WINAPI_PARTITION_APP': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\shared\winapifamily.h(157): note: see previous definition of 'WINAPI_PARTITION_APP'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(224): warning C4005: 'ISOLATIONAWARE_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(284): note: see previous definition of 'ISOLATIONAWARE_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(313): warning C4005: 'ISOLATIONAWARE_NOSTATICIMPORT_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(285): note: see previous definition of 'ISOLATIONAWARE_NOSTATICIMPORT_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(540): warning C4005: 'MAXIMUM_RESERVED_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(289): note: see previous definition of 'MAXIMUM_RESERVED_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(603): warning C4005: 'RT_MANIFEST': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(282): note: see previous definition of 'RT_MANIFEST'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1498): warning C4005: '_WIN32_WINNT': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\shared\sdkddkver.h(218): note: see previous definition of '_WIN32_WINNT'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1855): warning C4005: 'IDI_APPLICATION': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11058): note: see previous definition of 'IDI_APPLICATION'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1858): warning C4005: 'IDI_HAND': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11059): note: see previous definition of 'IDI_HAND'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1861): warning C4005: 'IDI_QUESTION': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11060): note: see previous definition of 'IDI_QUESTION'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1864): warning C4005: 'IDI_EXCLAMATION': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11061): note: see previous definition of 'IDI_EXCLAMATION'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1867): warning C4005: 'IDI_ASTERISK': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11062): note: see previous definition of 'IDI_ASTERISK'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1869): warning C4005: 'IDI_WINLOGO': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11064): note: see previous definition of 'IDI_WINLOGO'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1871): warning C4005: 'IDI_SHIELD': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11067): note: see previous definition of 'IDI_SHIELD'
+  Win32Bitmap.c
+  Generating Code...
+  Compiling...
+  Win32Cdrom.c
+d:\repo\msx-master\msx\bluemsx-dpi\src\win32\win32cdrom.c(315): warning C4996: 'GetVersionExA': was declared deprecated
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\sysinfoapi.h(414): note: see declaration of 'GetVersionExA'
+d:\repo\msx-master\msx\bluemsx-dpi\src\win32\win32cdrom.c(929): warning C4996: 'GetVersionExA': was declared deprecated
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\sysinfoapi.h(414): note: see declaration of 'GetVersionExA'
+  Win32directX.c
+d:\repo\msx-master\msx\bluemsx-dpi\src\win32\win32directx.c(254): warning C4996: 'GetVersionExA': was declared deprecated
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\sysinfoapi.h(414): note: see declaration of 'GetVersionExA'
+  Win32directXSound.c
+  Win32Eth.c
+  Win32Event.c
+  Win32file.c
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(39): warning C4005: 'WINAPI_PARTITION_DESKTOP': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\shared\winapifamily.h(150): note: see previous definition of 'WINAPI_PARTITION_DESKTOP'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(40): warning C4005: 'CREATEPROCESS_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(283): note: see previous definition of 'CREATEPROCESS_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(41): warning C4005: 'MINIMUM_RESERVED_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(288): note: see previous definition of 'MINIMUM_RESERVED_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(223): warning C4005: 'WINAPI_PARTITION_APP': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\shared\winapifamily.h(157): note: see previous definition of 'WINAPI_PARTITION_APP'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(224): warning C4005: 'ISOLATIONAWARE_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(284): note: see previous definition of 'ISOLATIONAWARE_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(313): warning C4005: 'ISOLATIONAWARE_NOSTATICIMPORT_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(285): note: see previous definition of 'ISOLATIONAWARE_NOSTATICIMPORT_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(540): warning C4005: 'MAXIMUM_RESERVED_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(289): note: see previous definition of 'MAXIMUM_RESERVED_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(603): warning C4005: 'RT_MANIFEST': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(282): note: see previous definition of 'RT_MANIFEST'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1498): warning C4005: '_WIN32_WINNT': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\shared\sdkddkver.h(218): note: see previous definition of '_WIN32_WINNT'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1855): warning C4005: 'IDI_APPLICATION': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11058): note: see previous definition of 'IDI_APPLICATION'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1858): warning C4005: 'IDI_HAND': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11059): note: see previous definition of 'IDI_HAND'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1861): warning C4005: 'IDI_QUESTION': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11060): note: see previous definition of 'IDI_QUESTION'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1864): warning C4005: 'IDI_EXCLAMATION': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11061): note: see previous definition of 'IDI_EXCLAMATION'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1867): warning C4005: 'IDI_ASTERISK': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11062): note: see previous definition of 'IDI_ASTERISK'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1869): warning C4005: 'IDI_WINLOGO': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11064): note: see previous definition of 'IDI_WINLOGO'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1871): warning C4005: 'IDI_SHIELD': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11067): note: see previous definition of 'IDI_SHIELD'
+  Win32FileTypes.c
+  Win32Glob.c
+  Win32Help.c
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(39): warning C4005: 'WINAPI_PARTITION_DESKTOP': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\shared\winapifamily.h(150): note: see previous definition of 'WINAPI_PARTITION_DESKTOP'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(40): warning C4005: 'CREATEPROCESS_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(283): note: see previous definition of 'CREATEPROCESS_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(41): warning C4005: 'MINIMUM_RESERVED_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(288): note: see previous definition of 'MINIMUM_RESERVED_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(223): warning C4005: 'WINAPI_PARTITION_APP': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\shared\winapifamily.h(157): note: see previous definition of 'WINAPI_PARTITION_APP'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(224): warning C4005: 'ISOLATIONAWARE_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(284): note: see previous definition of 'ISOLATIONAWARE_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(313): warning C4005: 'ISOLATIONAWARE_NOSTATICIMPORT_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(285): note: see previous definition of 'ISOLATIONAWARE_NOSTATICIMPORT_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(540): warning C4005: 'MAXIMUM_RESERVED_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(289): note: see previous definition of 'MAXIMUM_RESERVED_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(603): warning C4005: 'RT_MANIFEST': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(282): note: see previous definition of 'RT_MANIFEST'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1498): warning C4005: '_WIN32_WINNT': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\shared\sdkddkver.h(218): note: see previous definition of '_WIN32_WINNT'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1855): warning C4005: 'IDI_APPLICATION': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11058): note: see previous definition of 'IDI_APPLICATION'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1858): warning C4005: 'IDI_HAND': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11059): note: see previous definition of 'IDI_HAND'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1861): warning C4005: 'IDI_QUESTION': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11060): note: see previous definition of 'IDI_QUESTION'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1864): warning C4005: 'IDI_EXCLAMATION': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11061): note: see previous definition of 'IDI_EXCLAMATION'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1867): warning C4005: 'IDI_ASTERISK': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11062): note: see previous definition of 'IDI_ASTERISK'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1869): warning C4005: 'IDI_WINLOGO': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11064): note: see previous definition of 'IDI_WINLOGO'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1871): warning C4005: 'IDI_SHIELD': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11067): note: see previous definition of 'IDI_SHIELD'
+d:\repo\msx-master\msx\bluemsx-dpi\src\buildinfo\version.h(5): warning C4005: 'BLUE_MSX_VERSION_MINOR': macro redefinition
+  d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(472): note: see previous definition of 'BLUE_MSX_VERSION_MINOR'
+d:\repo\msx-master\msx\bluemsx-dpi\src\win32\win32help.c(67): warning C4476: 'sprintf' : unknown type field character '\t' in format specifier
+  Win32keyboard.c
+  Win32machineConfig.c
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(39): warning C4005: 'WINAPI_PARTITION_DESKTOP': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\shared\winapifamily.h(150): note: see previous definition of 'WINAPI_PARTITION_DESKTOP'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(40): warning C4005: 'CREATEPROCESS_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(283): note: see previous definition of 'CREATEPROCESS_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(41): warning C4005: 'MINIMUM_RESERVED_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(288): note: see previous definition of 'MINIMUM_RESERVED_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(223): warning C4005: 'WINAPI_PARTITION_APP': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\shared\winapifamily.h(157): note: see previous definition of 'WINAPI_PARTITION_APP'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(224): warning C4005: 'ISOLATIONAWARE_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(284): note: see previous definition of 'ISOLATIONAWARE_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(313): warning C4005: 'ISOLATIONAWARE_NOSTATICIMPORT_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(285): note: see previous definition of 'ISOLATIONAWARE_NOSTATICIMPORT_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(540): warning C4005: 'MAXIMUM_RESERVED_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(289): note: see previous definition of 'MAXIMUM_RESERVED_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(603): warning C4005: 'RT_MANIFEST': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(282): note: see previous definition of 'RT_MANIFEST'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1498): warning C4005: '_WIN32_WINNT': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\shared\sdkddkver.h(218): note: see previous definition of '_WIN32_WINNT'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1855): warning C4005: 'IDI_APPLICATION': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11058): note: see previous definition of 'IDI_APPLICATION'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1858): warning C4005: 'IDI_HAND': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11059): note: see previous definition of 'IDI_HAND'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1861): warning C4005: 'IDI_QUESTION': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11060): note: see previous definition of 'IDI_QUESTION'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1864): warning C4005: 'IDI_EXCLAMATION': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11061): note: see previous definition of 'IDI_EXCLAMATION'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1867): warning C4005: 'IDI_ASTERISK': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11062): note: see previous definition of 'IDI_ASTERISK'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1869): warning C4005: 'IDI_WINLOGO': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11064): note: see previous definition of 'IDI_WINLOGO'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1871): warning C4005: 'IDI_SHIELD': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11067): note: see previous definition of 'IDI_SHIELD'
+d:\repo\msx-master\msx\bluemsx-dpi\src\win32\win32machineconfig.c(112): warning C4477: '_snprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'void *'
+  Win32Menu.c
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(39): warning C4005: 'WINAPI_PARTITION_DESKTOP': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\shared\winapifamily.h(150): note: see previous definition of 'WINAPI_PARTITION_DESKTOP'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(40): warning C4005: 'CREATEPROCESS_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(283): note: see previous definition of 'CREATEPROCESS_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(41): warning C4005: 'MINIMUM_RESERVED_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(288): note: see previous definition of 'MINIMUM_RESERVED_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(223): warning C4005: 'WINAPI_PARTITION_APP': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\shared\winapifamily.h(157): note: see previous definition of 'WINAPI_PARTITION_APP'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(224): warning C4005: 'ISOLATIONAWARE_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(284): note: see previous definition of 'ISOLATIONAWARE_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(313): warning C4005: 'ISOLATIONAWARE_NOSTATICIMPORT_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(285): note: see previous definition of 'ISOLATIONAWARE_NOSTATICIMPORT_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(540): warning C4005: 'MAXIMUM_RESERVED_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(289): note: see previous definition of 'MAXIMUM_RESERVED_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(603): warning C4005: 'RT_MANIFEST': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(282): note: see previous definition of 'RT_MANIFEST'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1498): warning C4005: '_WIN32_WINNT': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\shared\sdkddkver.h(218): note: see previous definition of '_WIN32_WINNT'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1855): warning C4005: 'IDI_APPLICATION': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11058): note: see previous definition of 'IDI_APPLICATION'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1858): warning C4005: 'IDI_HAND': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11059): note: see previous definition of 'IDI_HAND'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1861): warning C4005: 'IDI_QUESTION': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11060): note: see previous definition of 'IDI_QUESTION'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1864): warning C4005: 'IDI_EXCLAMATION': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11061): note: see previous definition of 'IDI_EXCLAMATION'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1867): warning C4005: 'IDI_ASTERISK': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11062): note: see previous definition of 'IDI_ASTERISK'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1869): warning C4005: 'IDI_WINLOGO': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11064): note: see previous definition of 'IDI_WINLOGO'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1871): warning C4005: 'IDI_SHIELD': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11067): note: see previous definition of 'IDI_SHIELD'
+d:\repo\msx-master\msx\bluemsx-dpi\src\win32\win32menu.c(594): warning C4474: 'sprintf' : too many arguments passed for format string
+  d:\repo\msx-master\msx\bluemsx-dpi\src\win32\win32menu.c(594): note: placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+d:\repo\msx-master\msx\bluemsx-dpi\src\win32\win32menu.c(834): warning C4474: 'sprintf' : too many arguments passed for format string
+  d:\repo\msx-master\msx\bluemsx-dpi\src\win32\win32menu.c(834): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+d:\repo\msx-master\msx\bluemsx-dpi\src\win32\win32menu.c(836): warning C4474: 'sprintf' : too many arguments passed for format string
+  d:\repo\msx-master\msx\bluemsx-dpi\src\win32\win32menu.c(836): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+d:\repo\msx-master\msx\bluemsx-dpi\src\win32\win32menu.c(838): warning C4474: 'sprintf' : too many arguments passed for format string
+  d:\repo\msx-master\msx\bluemsx-dpi\src\win32\win32menu.c(838): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+d:\repo\msx-master\msx\bluemsx-dpi\src\win32\win32menu.c(840): warning C4474: 'sprintf' : too many arguments passed for format string
+  d:\repo\msx-master\msx\bluemsx-dpi\src\win32\win32menu.c(840): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+d:\repo\msx-master\msx\bluemsx-dpi\src\win32\win32menu.c(1951): warning C4013: 'actionWindowSizeTriple' undefined; assuming extern returning int
+d:\repo\msx-master\msx\bluemsx-dpi\src\win32\win32menu.c(1973): warning C4013: 'showLoadMemoryDlg' undefined; assuming extern returning int
+  Win32Midi.c
+  Win32MouseEmu.c
+  Win32Printer.c
+  Win32properties.c
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(39): warning C4005: 'WINAPI_PARTITION_DESKTOP': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\shared\winapifamily.h(150): note: see previous definition of 'WINAPI_PARTITION_DESKTOP'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(40): warning C4005: 'CREATEPROCESS_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(283): note: see previous definition of 'CREATEPROCESS_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(41): warning C4005: 'MINIMUM_RESERVED_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(288): note: see previous definition of 'MINIMUM_RESERVED_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(223): warning C4005: 'WINAPI_PARTITION_APP': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\shared\winapifamily.h(157): note: see previous definition of 'WINAPI_PARTITION_APP'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(224): warning C4005: 'ISOLATIONAWARE_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(284): note: see previous definition of 'ISOLATIONAWARE_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(313): warning C4005: 'ISOLATIONAWARE_NOSTATICIMPORT_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(285): note: see previous definition of 'ISOLATIONAWARE_NOSTATICIMPORT_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(540): warning C4005: 'MAXIMUM_RESERVED_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(289): note: see previous definition of 'MAXIMUM_RESERVED_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(603): warning C4005: 'RT_MANIFEST': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(282): note: see previous definition of 'RT_MANIFEST'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1498): warning C4005: '_WIN32_WINNT': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\shared\sdkddkver.h(218): note: see previous definition of '_WIN32_WINNT'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1855): warning C4005: 'IDI_APPLICATION': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11058): note: see previous definition of 'IDI_APPLICATION'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1858): warning C4005: 'IDI_HAND': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11059): note: see previous definition of 'IDI_HAND'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1861): warning C4005: 'IDI_QUESTION': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11060): note: see previous definition of 'IDI_QUESTION'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1864): warning C4005: 'IDI_EXCLAMATION': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11061): note: see previous definition of 'IDI_EXCLAMATION'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1867): warning C4005: 'IDI_ASTERISK': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11062): note: see previous definition of 'IDI_ASTERISK'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1869): warning C4005: 'IDI_WINLOGO': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11064): note: see previous definition of 'IDI_WINLOGO'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1871): warning C4005: 'IDI_SHIELD': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11067): note: see previous definition of 'IDI_SHIELD'
+  Win32ScreenShot.c
+  Win32ShortcutsConfig.c
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(39): warning C4005: 'WINAPI_PARTITION_DESKTOP': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\shared\winapifamily.h(150): note: see previous definition of 'WINAPI_PARTITION_DESKTOP'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(40): warning C4005: 'CREATEPROCESS_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(283): note: see previous definition of 'CREATEPROCESS_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(41): warning C4005: 'MINIMUM_RESERVED_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(288): note: see previous definition of 'MINIMUM_RESERVED_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(223): warning C4005: 'WINAPI_PARTITION_APP': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\shared\winapifamily.h(157): note: see previous definition of 'WINAPI_PARTITION_APP'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(224): warning C4005: 'ISOLATIONAWARE_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(284): note: see previous definition of 'ISOLATIONAWARE_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(313): warning C4005: 'ISOLATIONAWARE_NOSTATICIMPORT_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(285): note: see previous definition of 'ISOLATIONAWARE_NOSTATICIMPORT_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(540): warning C4005: 'MAXIMUM_RESERVED_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(289): note: see previous definition of 'MAXIMUM_RESERVED_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(603): warning C4005: 'RT_MANIFEST': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(282): note: see previous definition of 'RT_MANIFEST'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1498): warning C4005: '_WIN32_WINNT': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\shared\sdkddkver.h(218): note: see previous definition of '_WIN32_WINNT'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1855): warning C4005: 'IDI_APPLICATION': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11058): note: see previous definition of 'IDI_APPLICATION'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1858): warning C4005: 'IDI_HAND': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11059): note: see previous definition of 'IDI_HAND'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1861): warning C4005: 'IDI_QUESTION': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11060): note: see previous definition of 'IDI_QUESTION'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1864): warning C4005: 'IDI_EXCLAMATION': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11061): note: see previous definition of 'IDI_EXCLAMATION'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1867): warning C4005: 'IDI_ASTERISK': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11062): note: see previous definition of 'IDI_ASTERISK'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1869): warning C4005: 'IDI_WINLOGO': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11064): note: see previous definition of 'IDI_WINLOGO'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1871): warning C4005: 'IDI_SHIELD': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11067): note: see previous definition of 'IDI_SHIELD'
+  Win32snd.c
+  Win32ThemeClassic.c
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(39): warning C4005: 'WINAPI_PARTITION_DESKTOP': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\shared\winapifamily.h(150): note: see previous definition of 'WINAPI_PARTITION_DESKTOP'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(40): warning C4005: 'CREATEPROCESS_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(283): note: see previous definition of 'CREATEPROCESS_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(41): warning C4005: 'MINIMUM_RESERVED_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(288): note: see previous definition of 'MINIMUM_RESERVED_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(223): warning C4005: 'WINAPI_PARTITION_APP': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\shared\winapifamily.h(157): note: see previous definition of 'WINAPI_PARTITION_APP'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(224): warning C4005: 'ISOLATIONAWARE_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(284): note: see previous definition of 'ISOLATIONAWARE_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(313): warning C4005: 'ISOLATIONAWARE_NOSTATICIMPORT_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(285): note: see previous definition of 'ISOLATIONAWARE_NOSTATICIMPORT_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(540): warning C4005: 'MAXIMUM_RESERVED_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(289): note: see previous definition of 'MAXIMUM_RESERVED_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(603): warning C4005: 'RT_MANIFEST': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(282): note: see previous definition of 'RT_MANIFEST'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1498): warning C4005: '_WIN32_WINNT': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\shared\sdkddkver.h(218): note: see previous definition of '_WIN32_WINNT'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1855): warning C4005: 'IDI_APPLICATION': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11058): note: see previous definition of 'IDI_APPLICATION'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1858): warning C4005: 'IDI_HAND': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11059): note: see previous definition of 'IDI_HAND'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1861): warning C4005: 'IDI_QUESTION': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11060): note: see previous definition of 'IDI_QUESTION'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1864): warning C4005: 'IDI_EXCLAMATION': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11061): note: see previous definition of 'IDI_EXCLAMATION'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1867): warning C4005: 'IDI_ASTERISK': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11062): note: see previous definition of 'IDI_ASTERISK'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1869): warning C4005: 'IDI_WINLOGO': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11064): note: see previous definition of 'IDI_WINLOGO'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1871): warning C4005: 'IDI_SHIELD': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11067): note: see previous definition of 'IDI_SHIELD'
+  Generating Code...
+  Compiling...
+  Win32Thread.c
+  Win32Timer.c
+  Win32ToolLoader.c
+  Win32Uart.c
+  Win32Window.c
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(39): warning C4005: 'WINAPI_PARTITION_DESKTOP': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\shared\winapifamily.h(150): note: see previous definition of 'WINAPI_PARTITION_DESKTOP'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(40): warning C4005: 'CREATEPROCESS_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(283): note: see previous definition of 'CREATEPROCESS_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(41): warning C4005: 'MINIMUM_RESERVED_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(288): note: see previous definition of 'MINIMUM_RESERVED_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(223): warning C4005: 'WINAPI_PARTITION_APP': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\shared\winapifamily.h(157): note: see previous definition of 'WINAPI_PARTITION_APP'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(224): warning C4005: 'ISOLATIONAWARE_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(284): note: see previous definition of 'ISOLATIONAWARE_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(313): warning C4005: 'ISOLATIONAWARE_NOSTATICIMPORT_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(285): note: see previous definition of 'ISOLATIONAWARE_NOSTATICIMPORT_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(540): warning C4005: 'MAXIMUM_RESERVED_MANIFEST_RESOURCE_ID': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(289): note: see previous definition of 'MAXIMUM_RESERVED_MANIFEST_RESOURCE_ID'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(603): warning C4005: 'RT_MANIFEST': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(282): note: see previous definition of 'RT_MANIFEST'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1498): warning C4005: '_WIN32_WINNT': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\shared\sdkddkver.h(218): note: see previous definition of '_WIN32_WINNT'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1855): warning C4005: 'IDI_APPLICATION': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11058): note: see previous definition of 'IDI_APPLICATION'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1858): warning C4005: 'IDI_HAND': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11059): note: see previous definition of 'IDI_HAND'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1861): warning C4005: 'IDI_QUESTION': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11060): note: see previous definition of 'IDI_QUESTION'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1864): warning C4005: 'IDI_EXCLAMATION': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11061): note: see previous definition of 'IDI_EXCLAMATION'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1867): warning C4005: 'IDI_ASTERISK': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11062): note: see previous definition of 'IDI_ASTERISK'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1869): warning C4005: 'IDI_WINLOGO': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11064): note: see previous definition of 'IDI_WINLOGO'
+d:\repo\msx-master\msx\bluemsx-dpi\src\resources\resource.h(1871): warning C4005: 'IDI_SHIELD': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\um\winuser.h(11067): note: see previous definition of 'IDI_SHIELD'
+  Win32wmmSound.c
+  Patch.c
+  adler32.c
+  compress.c
+  crc32.c
+  deflate.c
+  gzio.c
+  infback.c
+  inffast.c
+  inflate.c
+  inftrees.c
+  ioapi.c
+  iowin32.c
+  trees.c
+  uncompr.c
+  Generating Code...
+  Compiling...
+  unzip.c
+  zip.c
+  zutil.c
+  DebugMemory.c
+d:\repo\msx-master\msx\bluemsx-dpi\src\common\debugmemory.c(70): warning C4477: 'printf' : format string '%.8x' requires an argument of type 'unsigned int', but variadic argument 2 has type 'void *'
+  AmdFlash.c
+  DeviceManager.c
+  IoPort.c
+  MegaromCartridge.c
+  MegaSCSIsub.c
+  ram1kBMirrored.c
+  ramMapper.c
+  ramMapperIo.c
+  ramNormal.c
+  RomLoader.c
+  romMapperA1FM.c
+  romMapperA1FMModem.c
+  romMapperASCII16.c
+  romMapperASCII16nf.c
+  romMapperASCII16sram.c
+  romMapperASCII8.c
+  Generating Code...
+  Compiling...
+  romMapperASCII8sram.c
+  romMapperBasic.c
+  romMapperBeerIDE.c
+  romMapperBunsetu.c
+  romMapperCasette.c
+  romMapperCrossBlaim.c
+  romMapperCvMegaCart.c
+  romMapperDisk.c
+  romMapperDRAM.c
+  romMapperDumas.c
+  romMapperF4device.c
+  romMapperFmDas.c
+  romMapperFMPAC.c
+  romMapperFMPAK.c
+  romMapperForteII.c
+  romMapperGameMaster2.c
+  romMapperGameReader.c
+  romMapperGIDE.c
+  romMapperGoudaSCSI.c
+  romMapperHalnote.c
+  Generating Code...
+  Compiling...
+  romMapperHarryFox.c
+  romMapperHolyQuran.c
+  romMapperJoyrexPsg.c
+  romMapperKanji.c
+  romMapperKanji12.c
+  romMapperKoei.c
+  romMapperKonami4.c
+  romMapperKonami4nf.c
+  romMapperKonami5.c
+  romMapperKonamiKeyboardMaster.c
+  romMapperKonamiSynth.c
+  romMapperKonamiWordPro.c
+  romMapperKorean126.c
+  romMapperKorean80.c
+  romMapperKorean90.c
+  romMapperLodeRunner.c
+  romMapperMajutsushi.c
+  romMapperMatraINK.c
+  romMapperMegaFlashRomScc.c
+  romMapperMegaRAM.c
+  Generating Code...
+  Compiling...
+  romMapperMicrosol.c
+  romMapperMicrosolVmx80.c
+  romMapperMoonsound.c
+  romMapperMsxAudio.c
+  romMapperMsxDos2.c
+  romMapperMsxMusic.c
+  romMapperMsxPrn.c
+  romMapperMsxRs232.c
+  romMapperNational.c
+  romMapperNationalFdc.c
+  romMapperNet.c
+  romMapperNettouYakyuu.c
+  romMapperNms8280VideoDa.c
+  romMapperNormal.c
+  romMapperNoWind.c
+  romMapperObsonet.c
+  romMapperOpcodePsg.c
+  romMapperPAC.c
+  romMapperPanasonic.c
+  romMapperPhilipsFdc.c
+  Generating Code...
+  Compiling...
+  romMapperPlain.c
+  romMapperPlayBall.c
+  romMapperRType.c
+  romMapperS1990.c
+  romMapperSCCplus.c
+  romMapperSegaBasic.c
+  romMapperSf7000Ipl.c
+  romMapperSfg05.c
+  romMapperSg1000.c
+  romMapperSg1000Castle.c
+  romMapperSonyHBI55.c
+  romMapperSonyHBIV1.c
+  romMapperStandard.c
+  romMapperSunriseIDE.c
+  romMapperSvi328Fdc.c
+  romMapperSvi328Prn.c
+  romMapperSvi328rs232.c
+  romMapperSvi707Fdc.c
+  romMapperSvi727.c
+  romMapperSvi738Fdc.c
+  Generating Code...
+  Compiling...
+  romMapperSvi80Col.c
+  romMapperTC8566AF.c
+  romMapperTurboRPcm.c
+  romMapperTurboRTimer.c
+  SlotManager.c
+  sramLoader.c
+  sramMapperEseSCC.c
+  sramMapperMatsuchita.c
+  sramMapperMegaSCSI.c
+  sramMapperS1985.c
+  CRTC6845.c
+  FrameBuffer.c
+  V9938.c
+  VDP.c
+  VideoManager.c
+  hq2x.c
+  hq3x.c
+  Scalebit.c
+  VideoRender.c
+  R800.c
+  Generating Code...
+  Compiling...
+  R800Dasm.c
+  R800Debug.c
+  R800SaveState.c
+  Casette.c
+  DirAsDisk.c
+  Disk.c
+  FdcAudio.c
+  ft245.c
+d:\repo\msx-master\msx\bluemsx-dpi\src\iodevice\ft245.c(598): warning C4091: 'typedef ': ignored on left of 'FT245' when no variable is declared
+  HarddiskIDE.c
+  I8250.c
+  I8251.c
+  I8254.c
+  I8255.c
+  Led.c
+  MB89352.c
+  Microwire93Cx6.c
+d:\repo\msx-master\msx\bluemsx-dpi\src\iodevice\microwire93cx6.c(58): warning C4091: 'typedef ': ignored on left of 'Microwire93Cx6' when no variable is declared
+  MidiIO.c
+d:\repo\msx-master\msx\bluemsx-dpi\src\iodevice\midiio.c(45): warning C4091: 'typedef ': ignored on left of 'MidiIO' when no variable is declared
+  MSXMidi.c
+  MsxPPI.c
+  NEC765.c
+  Generating Code...
+  Compiling...
+  PrinterIO.c
+d:\repo\msx-master\msx\bluemsx-dpi\src\iodevice\printerio.c(40): warning C4091: 'typedef ': ignored on left of 'PrinterIO' when no variable is declared
+  RTC.c
+  rtl8019.c
+d:\repo\msx-master\msx\bluemsx-dpi\src\iodevice\rtl8019.c(84): warning C4091: 'typedef ': ignored on left of 'RTL8019' when no variable is declared
+  Sc3000PPI.c
+  ScsiDevice.c
+  Sf7000PPI.c
+  sl811hs.c
+d:\repo\msx-master\msx\bluemsx-dpi\src\iodevice\sl811hs.c(37): warning C4091: 'typedef ': ignored on left of 'SL811HS' when no variable is declared
+  SunriseIDE.c
+  SviPPI.c
+  Switches.c
+  TC8566AF.c
+  TurboRIO.c
+  UartIO.c
+d:\repo\msx-master\msx\bluemsx-dpi\src\iodevice\uartio.c(41): warning C4091: 'typedef ': ignored on left of 'UartIO' when no variable is declared
+  WD2793.c
+  wd33c93.c
+  WDCRC.c
+  Language.c
+  AudioMixer.c
+  AY8910.c
+  DAC.c
+  Generating Code...
+  Compiling...
+  Fmopl.c
+  KeyClick.c
+  MameVLM5030.c
+  MameYM2151.c
+  MsxPsg.c
+  SamplePlayer.c
+  SCC.c
+  SN76489.c
+  VLM5030.c
+  Y8950.c
+  YM2151.c
+  Ymdeltat.c
+  Actions.c
+d:\repo\msx-master\msx\bluemsx-dpi\src\emulator\actions.c(464): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\ucrt\string.h(532): note: see declaration of 'strdup'
+  AppConfig.c
+  CommandLine.c
+  Emulator.c
+  FileHistory.c
+  LaunchFile.c
+  Properties.c
+d:\repo\msx-master\msx\bluemsx-dpi\src\emulator\properties.c(1056): warning C4474: 'sprintf' : too many arguments passed for format string
+  d:\repo\msx-master\msx\bluemsx-dpi\src\emulator\properties.c(1056): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+d:\repo\msx-master\msx\bluemsx-dpi\src\emulator\properties.c(1065): warning C4474: 'sprintf' : too many arguments passed for format string
+  d:\repo\msx-master\msx\bluemsx-dpi\src\emulator\properties.c(1065): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+  Theme.c
+  Generating Code...
+  Compiling...
+  ThemeControls.c
+  ThemeTriggers.c
+d:\repo\msx-master\msx\bluemsx-dpi\src\theme\themetriggers.c(860): warning C4475: 'sprintf' : length modifier 'L' cannot be used with type field character 'd' in format specifier
+  Adam.c
+  Board.c
+d:\repo\msx-master\msx\bluemsx-dpi\src\board\board.c(1299): warning C4091: 'typedef ': ignored on left of 'BoardTimer' when no variable is declared
+  Coleco.c
+  Machine.c
+  MSX.c
+  SG1000.c
+  SVI.c
+  Crc32Calc.c
+  DebugDeviceManager.c
+  Debugger.c
+  blowfish.c
+  IniFileParser.c
+d:\repo\msx-master\msx\bluemsx-dpi\src\utils\inifileparser.c(210): warning C4047: '=': 'int' differs in levels of indirection from 'void *'
+  IsFileExtension.c
+  PacketFileSystem.c
+  SaveState.c
+  StrcmpNoCase.c
+  TokenExtract.c
+  ziphelper.c
+  Generating Code...
+  Compiling...
+  CoinDevice.c
+  ColecoJoystick.c
+  InputEvent.c
+  JoystickPort.c
+  MagicKeyDongle.c
+  MsxArkanoidPad.c
+  MsxAsciiLaser.c
+  MsxGunstick.c
+  MsxJoystick.c
+  MsxMouse.c
+  MsxTetrisDongle.c
+  Sg1000JoyIo.c
+  Sg1000Joystick.c
+  SviJoyIo.c
+  SviJoystick.c
+  Generating Code...
+  Win32D3D.cpp
+  Win32Dir.cpp
+  Win32DirectShow.cpp
+  Win32VideoIn.cpp
+  GameReader.cpp
+  msxgr.cpp
+  tinystr.cpp
+  tinyxml.cpp
+  tinyxmlerror.cpp
+  tinyxmlparser.cpp
+  Moonsound.cpp
+  MsxAudio.cpp
+  OpenMsxY8950.cpp
+d:\repo\msx-master\msx\bluemsx-dpi\src\soundchips\openmsxy8950.cpp(640): warning C4838: conversion from 'int' to 'unsigned int' requires a narrowing conversion
+  OpenMsxY8950Adpcm.cpp
+  OpenMsxYM2413.cpp
+  OpenMsxYM2413_2.cpp
+d:\repo\msx-master\msx\bluemsx-dpi\src\soundchips\openmsxym2413_2.cpp(788): warning C4838: conversion from 'int' to 'unsigned int' requires a narrowing conversion
+  OpenMsxYMF262.cpp
+  OpenMsxYMF278.cpp
+  YM2413.cpp
+  ThemeLoader.cpp
+  Generating Code...
+  Compiling...
+  MediaDb.cpp
+  Sha1.cpp
+  VeryTinyXpath.cpp
+  Generating Code...
+  blueMSX.vcxproj -> D:\repo\MSX-master\MSX\blueMSX-DPI\Make\msvc2012\Release\blueMSX.exe
