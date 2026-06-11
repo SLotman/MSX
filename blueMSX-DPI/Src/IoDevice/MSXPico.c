@@ -278,6 +278,33 @@ DWORD WINAPI ThreadFunc(void* data) {
 					}
 
 					playSample = FALSE;
+				} else {
+					if (pauseSong == TRUE) {
+						MCI_GENERIC_PARMS mciGenericParms;
+						mciGenericParms.dwCallback = 0;
+						if (playing == 1) {
+							MCIERROR err = mciSendCommand(mciMusicId, MCI_PAUSE, MCI_WAIT, (DWORD)(LPVOID)&mciGenericParms);
+							if (err != 0) spitError("\n ::stopSample:: ERROR STOPPING SAMPLE!", err);
+							playing = 2;
+
+							char pauseFile[1024];
+							strcpy(pauseFile, filePath);
+							strcat(pauseFile, "\\pause.wav");
+							FILE *file;
+							if ((file = fopen(pauseFile, "r")))
+							{
+								fclose(file);
+								sndPlaySound(pauseFile, SND_ASYNC | SND_NODEFAULT);
+							}
+						} else {
+							if (playing == 2) {
+								MCIERROR err = mciSendCommand(mciMusicId, MCI_RESUME, 0, (DWORD)(LPVOID)&mciGenericParms);
+								if (err != 0) spitError("\n ::stopSample:: ERROR STOPPING SAMPLE!", err);
+								playing = 1;
+							}
+						}
+						pauseSong = FALSE;
+					}
 				}
 			}
 		}
@@ -368,6 +395,7 @@ static void writeIo(MSXPico* msxPico, UInt16 ioPort, UInt8 value) {
 
 	switch (value & 192) {
 		case 192:
+			/*
 			// pause or resume
 			OutputDebugString("Pause or resume song!\n");
 			if (msxPico->ioState == 1) {
@@ -384,6 +412,8 @@ static void writeIo(MSXPico* msxPico, UInt16 ioPort, UInt8 value) {
 				msxPico->ioState = 1;
 			}
 			return;
+			*/
+			pauseSong = TRUE;
 			break;
 
 		case 64:
