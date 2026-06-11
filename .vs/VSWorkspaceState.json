@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\blueMSX-DPI",
+    "\\blueMSX-DPI\\Make",
+    "\\blueMSX-DPI\\Make\\msvc2012",
+    "\\blueMSX-DPI\\Src",
+    "\\blueMSX-DPI\\Src\\Board"
+  ],
+  "SelectedNode": "\\blueMSX-DPI\\Src\\Board\\MSX.c",
+  "PreviewInSolutionExplorer": false
+}

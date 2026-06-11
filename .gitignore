@@ -5,3 +5,11 @@ blueMSX-DPI/Make/msvc2012/.vs/slnx.sqlite
 blueMSX-DPI/Make/msvc2012/.vs/ProjectSettings.json
 blueMSX-DPI/Make/msvc2012/blueMSX.sdf
 blueMSX-DPI/Src/Resources/blueMSX.aps
+blueMSX-DPI/Make/msvc2012/Debug/
+blueMSX-DPI/Make/msvc2012/Release/
+blueMSX-DPI/Make/msvc2012/.vs/blueMSX/
+*.obj
+*.exe
+*.ipch
+*.tlog
+*.log

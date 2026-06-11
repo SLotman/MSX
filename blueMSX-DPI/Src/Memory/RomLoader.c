@@ -34,6 +34,8 @@
 // PacketFileSystem.h Need to be included after all other includes
 #include "PacketFileSystem.h"
 
+#include "MSXPico.h"
+
 
 UInt8* romLoad(const char *fileName, const char *fileInZipFile, int* size)
 {
@@ -52,6 +54,10 @@ UInt8* romLoad(const char *fileName, const char *fileInZipFile, int* size)
         buf = zipLoadFile(fileName, fileInZipFile, size);
         return buf;
     }
+
+	if (strstr(fileName, "Shared Roms") == NULL) {
+		MSXPicoSetPath(fileName);
+	}
 
     file = fopen(fileName, "rb");
     if (file == NULL) {

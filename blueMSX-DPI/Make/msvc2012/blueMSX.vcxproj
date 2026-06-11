@@ -343,6 +343,7 @@
     <ClCompile Include="..\..\Src\Input\ColecoSteeringWheel.c" />
     <ClCompile Include="..\..\Src\Input\ColecoSuperAction.c" />
     <ClCompile Include="..\..\Src\IoDevice\Microchip24x00.c" />
+    <ClCompile Include="..\..\Src\IoDevice\MSXPico.c" />
     <ClCompile Include="..\..\Src\IoDevice\Z8530.c" />
     <ClCompile Include="..\..\Src\Memory\romMapperActivisionPcb.c" />
     <ClCompile Include="..\..\Src\Memory\romMapperArc.c" />
@@ -643,6 +644,7 @@
     <ClInclude Include="..\..\Src\Input\ColecoSteeringWheel.h" />
     <ClInclude Include="..\..\Src\Input\ColecoSuperAction.h" />
     <ClInclude Include="..\..\Src\IoDevice\Microchip24x00.h" />
+    <ClInclude Include="..\..\Src\IoDevice\MSXPico.h" />
     <ClInclude Include="..\..\Src\IoDevice\Z8530.h" />
     <ClInclude Include="..\..\Src\Memory\romMapperActivisionPcb.h" />
     <ClInclude Include="..\..\Src\Memory\romMapperArc.h" />

@@ -51,6 +51,8 @@
 #include "ramMapperIo.h"
 #include "CoinDevice.h"
 
+#include "MSXPico.h"
+
 void PatchZ80(void* ref, CpuRegs* cpuRegs);
 
 // Hardware
@@ -111,6 +113,8 @@ static void destroy() {
     deviceManagerDestroy();
 
     r800Destroy(r800);
+
+	//MSXPicoDestroy();
 }
 
 int getPC(){return r800->regs.PC.W;}
@@ -251,6 +255,8 @@ int msxCreate(Machine* machine,
     }
 
     success = machineInitialize(machine, &msxRam, &msxRamSize, &msxRamStart);
+
+	//MSXPicoCreate();
 
     msxPsg = msxPsgCreate(machine->board.type == BOARD_MSX || 
                           machine->board.type == BOARD_MSX_FORTE_II 

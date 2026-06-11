@@ -122,5 +122,7 @@ void machineSaveState(Machine* machine);
 
 void machineSetDirectory(const char* dir);
 
+void machineNotify();
+
 #endif
 

@@ -31,6 +31,7 @@
 #include "Win32Avi.h"
 
 #include "ArchSound.h"
+#include "MSXPico.h"
 
 static DxSound* dxSound = NULL;
 static WmmSound* wmmSound = NULL;
@@ -78,6 +79,7 @@ void archSoundDestroy(void)
         aviSoundDestroy(aviSound);
         aviSound = NULL;
     }
+
 }
 
 void archSoundResume(void) 

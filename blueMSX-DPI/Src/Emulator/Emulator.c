@@ -414,7 +414,7 @@ static void emulatorThread() {
 //extern int xxxx;
 
 void emulatorStart(const char* stateName) {
-        dbgEnable();
+	dbgEnable();
 
     archEmulationStartNotification();
 //xxxx = 0;
@@ -427,7 +427,6 @@ void emulatorStart(const char* stateName) {
     mixerIsChannelTypeActive(mixer, MIXER_CHANNEL_MSXAUDIO, 1);
     mixerIsChannelTypeActive(mixer, MIXER_CHANNEL_MSXMUSIC, 1);
     mixerIsChannelTypeActive(mixer, MIXER_CHANNEL_SCC, 1);
-
 
     properties->emulation.pauseSwitch = 0;
     switchSetPause(properties->emulation.pauseSwitch);
@@ -496,7 +495,7 @@ void emulatorStart(const char* stateName) {
         strcpy(properties->emulation.machineName, machine->name);
 
         debuggerNotifyEmulatorStart();
-
+		
         emuState = EMU_RUNNING;
     }
 #endif

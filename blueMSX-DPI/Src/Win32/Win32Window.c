@@ -615,7 +615,8 @@ static LRESULT CALLBACK windowProc(HWND hwnd, UINT iMsg, WPARAM wParam, LPARAM l
             EndPaint(hwnd, &ps);
         }
         return 0;
-    }
+
+	}
 
     wi = windowDataGet(hwnd);
     if (wi && wi->theme->themeHandler == TH_KBDCONFIG) {

@@ -149,6 +149,7 @@
 #include "romMapperMuPack.h"
 
 
+
 // PacketFileSystem.h Need to be included after all other includes
 #include "PacketFileSystem.h"
 
@@ -609,12 +610,19 @@ Machine* machineCreate(const char* machineName)
 
 void machineDestroy(Machine* machine)
 {
-    if (machine->zipFile)
+	if (machine->board.type & BOARD_MSX == BOARD_MSX) {
+		MSXPicoDestroy();
+	}
+
+	if (machine->zipFile)
         free(machine->zipFile);
     
     free(machine);
 }
 
+void machineNotify() {
+	MSXPicoNotify();
+}
 
 int machineIsValid(const char* machineName, int checkRoms)
 {
@@ -1043,6 +1051,10 @@ int machineInitialize(Machine* machine, UInt8** mainRam, UInt32* mainRamSize, UI
     UInt8* buf;
     int size;
     int i;
+
+	if (machine->board.type & BOARD_MSX == BOARD_MSX) {
+		MSXPicoCreate();
+	}
 
     // Prioritize 1kB Mirrored ram as main ram (works good with coleco style
     // systems with expansion ram but maybe main ram type should be an arg instead?).
