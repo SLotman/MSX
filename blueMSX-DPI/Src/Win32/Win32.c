@@ -1337,12 +1337,18 @@ static void checkClipRegion() {
     }
 }
 
-static int getZoom() {
-    if (pProperties->video.windowSize == P_VIDEO_SIZEFULLSCREEN && 
+static int getZoom() {	
+	if (pProperties->video.windowSize == P_VIDEO_SIZEFULLSCREEN) {
+		int h = GetSystemMetrics(SM_CYSCREEN);
+		return (int)(h / 240);
+	}
+
+	if (pProperties->video.windowSize == P_VIDEO_SIZEFULLSCREEN && 
         (pProperties->video.driver == P_VIDEO_DRVDIRECTX_VIDEO || 
         pProperties->video.driver == P_VIDEO_DRVDIRECTX))
     {
         DxDisplayMode* ddm = DirectDrawGetDisplayMode();
+		return (int)(ddm->height / 240);
         return ddm->width < 640 || ddm->height < 480 ? 1 : 2;
     }
 
@@ -1353,7 +1359,11 @@ static int getZoom() {
 		if (pProperties->video.windowSize == P_VIDEO_SIZEX3) return 3;
 	}
 
-    return pProperties->video.windowSize == P_VIDEO_SIZEX1 ? 1 : 2;
+	if (pProperties->video.windowSize == P_VIDEO_SIZEX1) return 1;
+	if (pProperties->video.windowSize == P_VIDEO_SIZEX2) return 2;
+	if (pProperties->video.windowSize == P_VIDEO_SIZEX3) return 3;
+
+    return 2;
 }
 
 
@@ -1549,6 +1559,8 @@ void themeSet(char* themeName, int forceMatch) {
 
 void archUpdateWindow() {
     int zoom = getZoom();
+	char letras[200]; sprintf(letras, "*********** zoom: %d", zoom);
+	OutputDebugString(letras);
 
     st.enteringFullscreen = 1;
     emulatorSuspend();
@@ -1565,7 +1577,7 @@ void archUpdateWindow() {
 
     if (pProperties->video.windowSize == P_VIDEO_SIZEFULLSCREEN) {
         if (pProperties->video.driver == P_VIDEO_DRVGDI) {
-            pProperties->video.windowSize = P_VIDEO_SIZEX2;
+			pProperties->video.windowSize = P_VIDEO_SIZEX2;
         }
         else {
             int rv;
@@ -1586,7 +1598,8 @@ void archUpdateWindow() {
                     D3DExitFullscreenMode();
                 else
                     DirectXExitFullscreenMode();
-                pProperties->video.windowSize = P_VIDEO_SIZEX2;
+
+				pProperties->video.windowSize = P_VIDEO_SIZEX3;
             }
         }
     }
@@ -1634,11 +1647,12 @@ void archUpdateWindow() {
             GetWindowPlacement(st.hwnd, &p);
             r.right  = p.rcNormalPosition.right - p.rcNormalPosition.left;
             r.bottom = p.rcNormalPosition.bottom - p.rcNormalPosition.top;
-        }
+		}
         if (!pProperties->video.horizontalStretch) {
             d.left  += zoom * (320 - 272) / 2;
             d.right -= zoom * (320 - 272) / 2;
         }
+
 
 		if (pProperties->video.windowSize == P_VIDEO_SIZEX2) {
 			r.right = appConfigGetInt("screen.normal.width", 640);

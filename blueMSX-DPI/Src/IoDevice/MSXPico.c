@@ -35,15 +35,19 @@ MSXPico* msxPico;
 static HWND _hwnd;
 static int loop;
 static int playing;
-static char filename[512];
-static char filePath[512];
+static char filename[1024];
+static char filePath[1024];
+static 	char loopName[1024];
 static int destroyed;
 static MCIDEVICEID mciMusicId;
+static MCIDEVICEID mciSampleId;
 static int  lastMusic;
 
 static int kaboom;
 static int playSong;
 static int stopSong;
+static int playSample;
+static int pauseSong;
 
 
 void MSXPicoSetPath(char *path) {
@@ -143,13 +147,36 @@ DWORD WINAPI ThreadFunc(void* data) {
 				stopSong = FALSE;
 				playing = 0;
 			}
+
+			if (mciSampleId != 0) {
+				OutputDebugString("\n **** ::stopMusic:: TRYING TO STOP SAMPLE mciId: "); printout(mciSampleId);
+				MCI_GENERIC_PARMS mciGenericParams;
+				mciGenericParams.dwCallback = 0; // (DWORD)_hwnd;
+				DWORD flags = MCI_WAIT;
+				MCIERROR err = mciSendCommand(mciSampleId, MCI_STOP, flags, (DWORD)(LPVOID)&mciGenericParams);
+				if (err != 0) spitError("\n ::stopMusic:: ERROR STOPPING SAMPLE!", err);
+				err = mciSendCommand(mciSampleId, MCI_CLOSE, flags, (DWORD)(LPVOID)&mciGenericParams);
+				if (err != 0) spitError("\n ::stopMusic:: ERROR CLOSING SAMPLE!", err);
+
+				stopSong = FALSE;
+				mciSampleId = -1;
+			}
+
 		} else {
 			if (playSong == TRUE) {
 				DWORD flags;
 				MCIERROR err;
 				MCI_OPEN_PARMS mciOpenParms;
 
-				if (playing != 0) return;
+				if (playing != 0) {
+					// STOP THIS SHIT
+					MCI_GENERIC_PARMS mciGenericParams;
+					mciGenericParams.dwCallback = 0; // (DWORD)_hwnd;
+					DWORD flags = 0; // MCI_WAIT;
+					MCIERROR err = mciSendCommand(mciMusicId, MCI_STOP, flags, (DWORD)(LPVOID)&mciGenericParams);
+					if (err != 0) spitError("\n ::stopMusic:: ERROR STOPPING MUSIC!", err);
+					playing = 0;
+				}
 
 				OutputDebugString("::: PLAYSONG THREADED!\n");
 
@@ -182,8 +209,7 @@ DWORD WINAPI ThreadFunc(void* data) {
 				if (err != 0) {
 					spitError("\n::PLAYMUSIC::ERROR OPENING MUSIC!", err);
 					exit(err);
-				}
-				else {
+				} else {
 					mciMusicId = mciOpenParms.wDeviceID;
 					OutputDebugString("\n***** MUSIC OPENED. TRY TO PLAY IT. DeviceID:"); printout(mciMusicId);
 
@@ -196,14 +222,63 @@ DWORD WINAPI ThreadFunc(void* data) {
 					if (err != 0) {
 						spitError("\n::PLAYMUSIC::ERROR PLAYING MUSIC!", err);
 						exit(err);
-					}
-					else {
+					} else {
 						OutputDebugString("\n***** MUSIC PLAYING SUCESSFULLY!\n");
 						playing = 1;
 					}
 				}
 
 				playSong = FALSE;
+			} else {
+				if (playSample == TRUE) {
+					OutputDebugString("\n::THREAD:: PLAY SAMPLE: ");
+					OutputDebugString(loopName); OutputDebugString("\n");
+
+					//if (mciSampleId!=0) {
+						// STOP THIS SHIT (at least outrun needs this)
+						MCI_GENERIC_PARMS mciGenericParams;
+						mciGenericParams.dwCallback = 0; // (DWORD)_hwnd;
+						DWORD flags = MCI_WAIT;
+						MCIERROR err = mciSendCommand(mciSampleId, MCI_STOP, flags, (DWORD)(LPVOID)&mciGenericParams);
+						err = mciSendCommand(mciSampleId, MCI_CLOSE, flags, (DWORD)(LPVOID)&mciGenericParams);
+						if (err != 0) spitError("\n ::stopSample:: ERROR STOPPING SAMPLE!", err);
+						playing = 0;
+					//}
+
+
+					MCI_OPEN_PARMS mciOpenParms;
+					memset(&mciOpenParms, 0, sizeof(mciOpenParms));
+					mciOpenParms.lpstrAlias = NULL;
+					mciOpenParms.wDeviceID = 0;
+					mciOpenParms.dwCallback = 0; // (DWORD)_hwnd;
+					mciOpenParms.lpstrDeviceType = MCI_DEVTYPE_WAVEFORM_AUDIO;
+					mciOpenParms.lpstrElementName = loopName;
+
+					// flags = MCI_OPEN_TYPE | MCI_WAIT | MCI_OPEN_ELEMENT;
+					err = mciSendCommand(0, MCI_OPEN, MCI_OPEN_ELEMENT | MCI_WAIT, (DWORD)(LPVOID)&mciOpenParms);
+					if (err != 0) {
+						spitError("\n::PLAY SAMPLE::ERROR OPENING SAMPLE!", err);
+						exit(err);
+					} else {
+						mciSampleId = mciOpenParms.wDeviceID;
+						OutputDebugString("\n***** SAMPLE OPENED. TRY TO PLAY IT. DeviceID:"); printout(mciMusicId);
+
+						MCI_PLAY_PARMS mciPlayParams;
+						mciPlayParams.dwCallback = 0; // (DWORD)_hwnd;
+						mciPlayParams.dwFrom = 0;
+						mciPlayParams.dwTo = 0;
+						err = mciSendCommand(mciSampleId, MCI_PLAY, MCI_NOTIFY, (DWORD)&mciPlayParams);
+						if (err != 0) {
+							spitError("\n::PLAYSAMPLE::ERROR PLAYING SAMPLE!", err);
+							exit(err);
+						}
+						else {
+							OutputDebugString("\n***** SAMPLE PLAYING SUCESSFULLY!\n");
+						}
+					}
+
+					playSample = FALSE;
+				}
 			}
 		}
 
@@ -227,6 +302,9 @@ int MSXPicoCreate() {
 	kaboom = FALSE;
 	playSong = FALSE;
 	stopSong = FALSE;
+	playSample = FALSE;
+	pauseSong = FALSE;
+	playSample = FALSE;
 
 	//void ioPortRegister(int port, IoPortRead read, IoPortWrite write, void* ref)
 	ioPortRegister(0x92, readIo, writeIo, msxPico);
@@ -332,13 +410,19 @@ static void writeIo(MSXPico* msxPico, UInt16 ioPort, UInt8 value) {
 			//retval = sendMCI("setaudio MSXWAVE volume to 10");
 			//sendMCI("play MSXSND");
 
-			char loopName[2048];
 			strcpy(loopName, filePath);
 
 			memset(songname, 0, sizeof(songname));
-			sprintf(songname, "0%d.wav", song);
+			if (song < 10) {
+				sprintf(songname, "0%d.wav", song);
+			} else {
+				sprintf(songname, "%d.wav", song);
+			}
 			strcat(loopName, songname);
-			sndPlaySound(TEXT(loopName), SND_NODEFAULT | SND_ASYNC);
+			//sndPlaySound(TEXT(loopName), SND_NODEFAULT | SND_ASYNC);
+			playSample = TRUE;
+			stopSong = FALSE;
+			playSong = FALSE;
 
 			break;
 
@@ -374,7 +458,12 @@ static void writeIo(MSXPico* msxPico, UInt16 ioPort, UInt8 value) {
 			lastMusic = song;
 			memset(filename, 0, sizeof(filename));
 			strcpy(filename, filePath);
-			sprintf(songname, "0%d.wav", song);
+			if (song < 10) {
+				sprintf(songname, "0%d.wav", song);
+			}
+			else {
+				sprintf(songname, "%d.wav", song);
+			}
 			strcat(filename, songname);
 
 			//playMusic();
@@ -392,8 +481,9 @@ static void writeIo(MSXPico* msxPico, UInt16 ioPort, UInt8 value) {
 
 			//stopMusic();
 			playSong = FALSE;
+			playSample = FALSE;
 			stopSong = TRUE;
-
+			playing = 1;
 			loop = 0;
 			//playing = 0;
 			msxPico->loop = 0;

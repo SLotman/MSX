@@ -525,8 +525,8 @@ BOOL DirectXEnterWindowedMode(HWND hwnd, int width, int height, int useVideoBack
         ddsd.dwSize = sizeof(DDSURFACEDESC2);
         ddsd.dwFlags = DDSD_CAPS | DDSD_HEIGHT | DDSD_WIDTH;
         ddsd.ddsCaps.dwCaps = DDSCAPS_OFFSCREENPLAIN | DDSCAPS_SYSTEMMEMORY;
-        ddsd.dwWidth = width;
-        ddsd.dwHeight = height;
+		ddsd.dwWidth = width;
+		ddsd.dwHeight = height;
         ddrval = IDirectDraw7_CreateSurface(lpDD, &ddsd, &lpDDSTemp2, NULL);
         if( ddrval != DD_OK ) {
             return DXE_CREATESURFACE;
@@ -605,7 +605,6 @@ static int renderNoStretch(Video* pVideo, FrameBuffer* frameBuffer, int bitCount
 
     zoom = videoRender(pVideo, frameBuffer, bitCount, zoom, 
                        dstBuffer, dstOffset, dstPitch, canChangeZoom);
-
     if (borderWidth > 0) {
         borderWidth *= zoom;
         if (bitCount == 16) {
@@ -750,11 +749,11 @@ int DirectXUpdateSurface(Video* pVideo,
 
     if (sysMemBuffering) {
         do {
-            ddrval = IDirectDrawSurface7_BltFast(lpDDSTemp1, 0, 0, surface, NULL, DDBLTFAST_DONOTWAIT);
-
-            if (ddrval == DDERR_SURFACELOST) {
-                ddrval = IDirectDrawSurface7_Restore(lpDDSTemp1);
-            }
+			IDirectDrawSurface7_Blt(lpDDSTemp1, 0, 0, surface, NULL, DDBLTFAST_DONOTWAIT);
+            //ddrval = IDirectDrawSurface7_BltFast(lpDDSTemp1, 0, 0, surface, NULL, DDBLTFAST_DONOTWAIT);
+            //if (ddrval == DDERR_SURFACELOST) {
+            //    ddrval = IDirectDrawSurface7_Restore(lpDDSTemp1);
+            //}
         } while (ddrval == DDERR_WASSTILLDRAWING);
         surface = lpDDSTemp1;
     }
