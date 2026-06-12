@@ -77,7 +77,8 @@ static BOOL CALLBACK aboutDlgProc(HWND hDlg, UINT iMsg, WPARAM wParam, LPARAM lP
                                 "Ray Zero\r\n"
                                 "hap\r\n"
                                 "Ricardo Bittencourt\r\n"
-                                "white cat\r\n\r\n\r\n"
+                                "white cat\r\n"
+								"SLotman\r\n\r\n\r\n"
 
                                 "%s\r\n\r\n"
 
@@ -129,7 +130,6 @@ static BOOL CALLBACK aboutDlgProc(HWND hDlg, UINT iMsg, WPARAM wParam, LPARAM lP
                                 "Sandy Pleyte\r\n"
                                 "Shimanuki Koshi\r\n"
                                 "Sjoerd de Vries\r\n"
-                                "SLotman\r\n"
                                 "Marcelo Tini\r\n"
                                 "Tanni\r\n"
                                 "Tatsuyuki Satoh\r\n"

@@ -10,6 +10,7 @@ BlueMSX will also require the DirectX SDK, I recommend the August 2007 version, 
 - install VS2010                (ie. Microsoft Visual C++ 2010 Professional or Express)
 - install the Windows SDK       (ie. Microsoft Windows Software Development Kit Update for Windows Vista)
 - install the DirectX SDK       (ie. dxsdk_aug2007.exe)
+- install the DirectX9 SDK
 
 - the "additional include directories" are already set in the project to:
   C:\Program Files\Microsoft SDKs\Windows\v6.1\Include

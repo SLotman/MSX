@@ -1,3 +1,12 @@
+v.2.10		June, 12, 2026
+=============================
+- Pico Wave Game emulation
+
+	Known bugs:
+	-----------------------
+	- fullscreen on DirectDraw, DirectDraw Accelerated and GDI is broken.
+	- Window x3 breaks themes, they don't have support for it.
+
 v.2.9.4		July, 18, 2021
 =============================
 - fixed video dialog cut-off
